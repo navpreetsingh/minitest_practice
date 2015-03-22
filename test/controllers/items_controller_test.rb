@@ -13,5 +13,15 @@ describe ItemsController do
     it "responds with success" do
       must_respond_with :success
     end
+
+    it "fetches and assigns a list of to-do items" do
+      assigns(:items).wont_be_nil
+
+      item_ids = assigns(:items).map(&:id).sort
+      item_ids.must_equal Item.pluck(:id).sort
+    end
   end
+
+
+
 end

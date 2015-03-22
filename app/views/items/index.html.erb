@@ -1,2 +1,9 @@
-<%= content_tag :div, class: 'items' do %>
+<%= content_tag :div, id: 'items' do %>
+	<%= @items.each do |item| %>
+		<%= content_tag :p, id: "item-#{ item.id }", class: "item" do %>
+		<%= content_tag :b, item.name %>
+			<br>
+			<%= item.description %>
+		<% end -%>
+	<% end -%>
 <% end -%>

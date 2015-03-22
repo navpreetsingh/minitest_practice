@@ -84,6 +84,8 @@ GEM
       capybara (~> 2.2)
       minitest (~> 5.0)
       rake
+    minitest-debugger (1.0.3)
+      minitest (~> 5.0)
     minitest-metadata (0.5.3)
       minitest (>= 4.7, < 6.0)
     minitest-rails (2.1.1)
@@ -184,6 +186,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  minitest-debugger
   minitest-rails-capybara
   minitest-reporters
   rails (= 4.2.0)
